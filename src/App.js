@@ -14,16 +14,17 @@ function App() {
       style={{
         display: "flex",
         height: "-webkit-fill-available",
-        justifyContent: "center"
+        justifyContent: "center",
+        height: "auto"
       }}
     >
       <div
         className="App"
         style={{
-          minWidth: "500px"
+          minWidth: "500px",
+          border: "1px #e8eaf6 solid"
         }}
       >
-        <SearchAppBar />
         <div
           align="center"
           className="Card1"
@@ -33,10 +34,11 @@ function App() {
             padding: "5px 5px 0px 5px"
           }}
         >
+          <SearchAppBar />
           <Carousel />
         </div>
 
-        <div className="Card2">
+        <div className="Card2" style={{ marginTop: "60px" }}>
           <h5 style={{ marginBottom: "0px" }}>
             <strong>Category</strong>
           </h5>

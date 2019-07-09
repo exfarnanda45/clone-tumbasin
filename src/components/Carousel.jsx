@@ -16,7 +16,8 @@ class Carousel extends Component {
       <div
         className="container"
         style={{
-          padding: "0"
+          padding: "0",
+          marginTop: "60px"
         }}
       >
         <Slider {...settings}>

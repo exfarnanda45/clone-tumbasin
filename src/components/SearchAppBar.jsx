@@ -78,8 +78,10 @@ export default function SearchAppBar() {
         position="static"
         style={{
           backgroundColor: "#153B50",
+          width: 500,
+          height: 60,
           position: "fixed",
-          width: 500
+          margin: "-6px 5px 5px -6px"
         }}
       >
         <Toolbar>
