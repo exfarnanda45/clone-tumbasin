@@ -12,7 +12,10 @@ const useStyles = makeStyles({
   card: {
     maxWidth: 300,
     width: "200px",
-    height: "325px"
+    height: "275px",
+    margin: "0 10px 0 0",
+    flexGrow: "1",
+    flexShrink: "0"
   },
   media: {
     height: 140
@@ -23,72 +26,196 @@ export default function MediaCard() {
   const classes = useStyles();
 
   return (
-    <div style={{}}>
-      <Card className={classes.card}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image="https://picsum.photos/200/150"
-            title="Contemplative Reptile"
-          >
-            <div>
-              <p
-                style={{
-                  backgroundColor: "#ff8f00",
-                  color: "#ffffff",
-                  width: 80
-                }}
+    <div
+      style={{
+        overflow: "hidden",
+        width: "100%"
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          maxWidth: "500px",
+          overflowX: "scroll"
+        }}
+      >
+        <Card className={classes.card}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://picsum.photos/200/150"
+              title="Contemplative Reptile"
+            >
+              <div>
+                <p
+                  style={{
+                    backgroundColor: "#ff8f00",
+                    color: "#ffffff",
+                    width: 80
+                  }}
+                >
+                  /250 Gram
+                </p>
+              </div>
+            </CardMedia>
+
+            <CardContent style={{ padding: 5 }}>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
               >
-                /250 Gram
-              </p>
-            </div>
-          </CardMedia>
-          <CardMedia
-            className={classes.media}
-            image="https://picsum.photos/200/150"
-            title="Contemplative Reptile"
-          >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end"
-              }}
-            >
-              <p
-                style={{
-                  backgroundColor: "#ff8f00",
-                  color: "#ffffff",
-                  width: 80
-                }}
+                <p style={{ margin: 0 }}>Pulpen</p>
+              </Typography>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
               >
-                /250 Gram
-              </p>
-            </div>
-          </CardMedia>
-          <CardContent style={{ padding: 5 }}>
-            <Typography
-              component="p"
-              style={{ fontWeight: "bold", fontWeight: "20px" }}
+                <p>
+                  <strong>Rp 1.500</strong>
+                </p>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button variant="contained" color="primary" style={{}}>
+              Tambahkan
+            </Button>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://picsum.photos/200/150"
+              title="Contemplative Reptile"
             >
-              <p style={{ margin: 0 }}>Pulpen</p>
-            </Typography>
-            <Typography
-              component="p"
-              style={{ fontWeight: "bold", fontWeight: "20px" }}
+              <div>
+                <p
+                  style={{
+                    backgroundColor: "#ff8f00",
+                    color: "#ffffff",
+                    width: 80
+                  }}
+                >
+                  /250 Gram
+                </p>
+              </div>
+            </CardMedia>
+
+            <CardContent style={{ padding: 5 }}>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
+              >
+                <p style={{ margin: 0 }}>Pulpen</p>
+              </Typography>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
+              >
+                <p>
+                  <strong>Rp 1.500</strong>
+                </p>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button variant="contained" color="primary" style={{}}>
+              Tambahkan
+            </Button>
+          </CardActions>
+        </Card>
+        <Card className={classes.card}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://picsum.photos/200/150"
+              title="Contemplative Reptile"
             >
-              <p>
-                <strong>Rp 1.500</strong>
-              </p>
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button variant="contained" color="primary" style={{}}>
-            Tambahkan
-          </Button>
-        </CardActions>
-      </Card>
+              <div>
+                <p
+                  style={{
+                    backgroundColor: "#ff8f00",
+                    color: "#ffffff",
+                    width: 80
+                  }}
+                >
+                  /250 Gram
+                </p>
+              </div>
+            </CardMedia>
+
+            <CardContent style={{ padding: 5 }}>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
+              >
+                <p style={{ margin: 0 }}>Pulpen</p>
+              </Typography>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
+              >
+                <p>
+                  <strong>Rp 1.500</strong>
+                </p>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button variant="contained" color="primary" style={{}}>
+              Tambahkan
+            </Button>
+          </CardActions>
+        </Card>
+
+        <Card className={classes.card}>
+          <CardActionArea>
+            <CardMedia
+              className={classes.media}
+              image="https://picsum.photos/200/150"
+              title="Contemplative Reptile"
+            >
+              <div>
+                <p
+                  style={{
+                    backgroundColor: "#ff8f00",
+                    color: "#ffffff",
+                    width: 80
+                  }}
+                >
+                  /250 Gram
+                </p>
+              </div>
+            </CardMedia>
+
+            <CardContent style={{ padding: 5 }}>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
+              >
+                <p style={{ margin: 0 }}>Pulpen</p>
+              </Typography>
+              <Typography
+                component="p"
+                style={{ fontWeight: "bold", fontWeight: "20px" }}
+              >
+                <p>
+                  <strong>Rp 1.500</strong>
+                </p>
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+            <Button variant="contained" color="primary" style={{}}>
+              Tambahkan
+            </Button>
+          </CardActions>
+        </Card>
+      </div>
     </div>
   );
 }
