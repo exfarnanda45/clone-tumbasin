@@ -11,8 +11,8 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   card: {
     maxWidth: 300,
-    width: "200px",
-    height: "275px",
+    width: "175px",
+    height: "270px",
     margin: "0 10px 0 0",
     flexGrow: "1",
     flexShrink: "0"
@@ -45,7 +45,7 @@ export default function MediaCard() {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image="https://picsum.photos/200/150"
+              image="https://picsum.photos/150/150"
               title="Contemplative Reptile"
             >
               <div>

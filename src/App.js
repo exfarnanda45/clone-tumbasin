@@ -21,7 +21,8 @@ function App() {
         className="App"
         style={{
           minWidth: "500px",
-          border: "1px #e8eaf6 solid"
+          border: "1px #e8eaf6 solid",
+          height: 930
         }}
       >
         <div
