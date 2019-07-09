@@ -18,9 +18,9 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const myStyle = {
     width: "500px",
-    border: "1px solid #E0E0E0",
-    position: "fixed",
-    bottom: "0"
+    border: "1px solid #E0E0E0"
+    // position: "fixed",
+    // bottom: 0
   };
 
   return (

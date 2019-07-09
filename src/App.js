@@ -14,8 +14,7 @@ function App() {
       style={{
         display: "flex",
         height: "-webkit-fill-available",
-        justifyContent: "center",
-        height: "auto"
+        justifyContent: "center"
       }}
     >
       <div
